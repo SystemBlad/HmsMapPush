@@ -1,0 +1,35 @@
+{
+  "name": "RnHms",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "android:clean-run": "cd android && gradlew clean && cd .. && react-native run-android",
+    "ios": "react-native run-ios",
+    "android:run-release": "react-native run-android --variant=release",
+    "android:ALL:bundle-release": "cd android && gradlew clean && gradlew bundleRelease",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@hmscore/react-native-hms-map": "^5.2.0-302",
+    "@hmscore/react-native-hms-push": "^5.1.1-301",
+    "react": "17.0.1",
+    "react-native": "0.64.2",
+    "react-native-device-info": "^8.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "7.14.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.64.0",
+    "react-test-renderer": "17.0.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
